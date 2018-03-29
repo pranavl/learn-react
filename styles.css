@@ -1,0 +1,21 @@
+body {
+    background-color: powderblue;
+}
+
+h1 {
+    color: red;
+}
+
+#p01 {
+    color: blue;
+}
+p.error {
+    color: rgb(234, 4, 255);
+}
+
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    display: block;
+}
