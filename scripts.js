@@ -12,3 +12,19 @@ function reveal() {
 		x[i].style.display = "block";
 	}
 }
+
+function getHealth() {
+	console.log('Hello')
+	var config = {
+		headers: {
+			'Access-Control-Allow-Origin': '*'
+		}
+	}
+	axios.get('http://localhost:8000/health', config)
+		.then(function (response) {
+			console.log(response);
+		})
+		.catch(function (error) {
+			console.log(error);
+		});
+}
