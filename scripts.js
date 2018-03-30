@@ -13,14 +13,15 @@ function reveal() {
 	}
 }
 
+var token = ''
+
 function getHealth() {
-	console.log('Hello')
 	var config = {
 		headers: {
-			'Access-Control-Allow-Origin': '*'
+			Authorization: 'Bearer ' + token
 		}
 	}
-	axios.get('http://localhost:8000/health', config)
+	axios.get('http://localhost:8000/health/auth', config)
 		.then(function (response) {
 			console.log(response);
 		})
